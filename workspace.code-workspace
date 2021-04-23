@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\josho\\PERplex"
+		},
+		{
+			"name": "210326-192944-d1_mini_lite",
+			"path": "C:\\Users\\josho\\OneDrive\\Documents\\PlatformIO\\Projects\\210326-192944-d1_mini_lite"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"array": "cpp",
+			"string": "cpp"
+		}
+	}
+}
