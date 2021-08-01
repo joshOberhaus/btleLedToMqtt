@@ -1,0 +1,9 @@
+[Unit]
+Description=LED Handler
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/pi/btleLedVenv/bin/python  /home/pi/btleLedToMqtt/ledHandler.py
+[Install]
+WantedBy=multi-user.target
