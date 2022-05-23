@@ -4,6 +4,7 @@ from subprocess import Popen
 import time
 from bluepy import btle
 import bluepy
+import sys
 #import daemon
 
 address = "70:06:00:00:08:44"
@@ -113,8 +114,9 @@ def main():
                 print("now")
                 deviceConnected = True
             except bluepy.btle.BTLEDisconnectError:
-                print("Couldn't connect, waiting a second")
+                print("Couldn't connect, going to restart")
                 time.sleep(1)
+                sys.exit(1)
         if(wrgbCharWrite and deviceConnected):
             try:
                 client.loop(timeout=1.0, max_packets=1)

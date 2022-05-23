@@ -1,9 +1,10 @@
 [Unit]
-Description=LED Handler 3
+Description=LED Handler 4
 After=multi-user.target
 [Service]
 Type=simple
 Restart=always
-ExecStart=/home/pi/btleLedVenv/bin/python /home/pi/btleLedToMqtt/ledHandler3.py
+RestartSec=30
+ExecStart=/home/pi/btleLedVenv/bin/python /home/pi/btleLedToMqtt/ledHandler4.py
 [Install]
 WantedBy=multi-user.target
